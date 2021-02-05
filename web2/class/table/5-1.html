@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        th, td{
+            border : 2px gray solid;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table class="ac l10">
+        <tr>
+            <td>1</td><td>2</td><td>3</td>
+        </tr>
+        <tr>
+            <td>4</td><td colspan="2">5</td>
+        </tr>
+        <tr>
+            <td>6</td><td>7</td><td>8</td>
+        </tr>
+    </table>
+    <br>
+    <table class="ac l10">
+        <tr>
+            <td>1</td><td>2</td><td>3</td><td>8</td>
+        </tr>
+        <tr>
+            <td>4</td><td colspan="3">5</td>
+        </tr>
+        <tr>
+            <td>6</td><td>7</td><td>8</td><td>9</td>
+        </tr>
+    </table>
+    <br>
+    <table class="ac l10">
+        <tr>
+            <td>1</td><td>2</td><td>3</td><td>4</td>
+        </tr>
+        <tr>
+            <td>5</td><td rowspan="3">6</td><td>7</td><td>8</td>
+        </tr>
+        <tr>
+            <td>9</td><td>10</td><td>11</td>
+        </tr>
+        <tr>
+            <td>12</td><td>13</td><td>14</td>
+        </tr>
+    </table>
+    <br>
+    <table class="ac l10">
+        <colgroup>
+            <col span="2" style="background-color: red;">
+            col
+        </colgroup>
+        <thead>
+            <tr>
+                <td>1</td><td colspan="2">2</td><td>3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4</td><td>5</td><td>6</td><td rowspan="3">7</td>
+            </tr>
+
+            <tr>
+                <td>8</td><td>9</td><td>10</td>
+            </tr>
+            <tr>
+                <td>11</td><td>12</td><td>13</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+</body>
+</html>

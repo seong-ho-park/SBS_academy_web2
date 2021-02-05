@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+            *{margin:0; padding:0;}
+            a{text-decoration: none;}
+
+            header{
+                width:100%;
+                height:46px;
+                background: url(imgs/bg.png) repeat-x;
+                position:relative;
+                /*overflow:hidden;*/
+            }
+            header .logo{
+                width:100px;
+                height:30px;
+                line-height: 32px;
+                margin: 0px auto; /* 로고를 가운데 정렬*/
+                text-align: center;
+                padding-top: 5px;
+                color:white;
+                
+            }
+            .button{
+                position:absolute;
+                top:4px;
+                left:10px;
+                /*splites 에서 가져온 사진*/
+                width: 81px; height: 38px;
+                background: url('imgs/css_sprites.png') -10px -10px;
+                font-size: 0;
+            }
+            .menu{
+                position: absolute;
+                top:4px;
+                right:10px;
+                /*splites 에서 가져온 사진2*/
+                width: 46px; height: 38px;
+                background: url('imgs/css_sprites.png') -111px -10px;
+                font-size: 0;
+            }
+
+          
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="button">button</a>
+            <h1 class="logo">LOGO</h1>
+            <a href="#" class="menu">menu</a>
+        </header>
+    </body>
+</html>

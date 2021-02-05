@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="" rel="stylesheet" type="text/css">
+        <style>
+            *{margin:0; padding:0;}
+            #wrap{
+                position:absolute;
+                width:200px;
+                height:200px;
+                border-radius:100px;
+                text-align: center;
+                /* 그라데이션 넣는 법*/
+                background:linear-gradient(to bottom, rgba(135,224,253,1) 0%, rgb(4, 228, 97) 50%, rgb(157, 199, 6) 100% );
+                animation-name: A_rotate;
+                animation-duration: 2s;
+                animation-timing-function: ease-in;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+            #wrap:hover{
+                animation-play-state: paused;
+            }
+            h1{
+                line-height: 175px;
+            }
+            @keyframes A_rotate {
+                from{
+                    left:0px;
+                    transform:rotate(0deg);
+                }50%{
+                    left:250px;
+
+                }to{
+                    left:500px;
+                    transform: rotate(360deg);
+                }
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <h1>animation</h1>    
+        </div>
+    </body>
+</html>

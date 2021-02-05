@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>outlook</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="" rel="stylesheet" type="text/css">
+        <style>     
+            body{
+                font-family: "맑은고딕","돋움","arial";
+                font-size:12px;
+                color:#6d6d6d;
+            }
+
+            .banner1{ float: left; display: inline;}
+            .login{
+                float:left;
+                width: 250px;
+                height:475px;
+            }
+            .wd60{width:60px}
+
+            div#wrapper{width: 750px; margin:0 auto;}
+
+            section{float:left; padding-left: 25px; }
+            section h1{padding-top:20px}
+            section a {color: #2b43ac; }
+            section table td{padding:5px 0 0 0}
+
+            hr{clear:both;}
+            input.userInput{
+                background-color: #dadada;
+                border-color:  solid ;
+                border: gray solid 1px;
+            }
+            input:focus {outline:none;}
+            a:visited{text-decoration:none; color: #2b43ac;}
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <aside>
+                <div class="banner1">
+                    <img src="imgs/img_left.gif" alt="원드라이브고 항고 사진입니다." srcset="">
+                </div>
+            </aside>
+             <section class="container">
+                <div class="login">
+                    <h1><img src="imgs/logo.gif" alt=""></h1>
+                    <p class="t10">Microsoft 계정 <a href="#">자세히</a></p>
+                    <article>
+                        <form action="*" method="post">
+                            <table class="t15">
+                                    <tr>
+                                        <td class="wd60"><label for="userName" >아이디</label></td><td><input type="text" name="" id="userName" class="userInput" autocomplete="on"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="wd60"><label for="userPwd"  >패스워드</label></td><td><input type="password" name="" id="userPwd" class="userInput" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="t15"><input type="checkbox" name="" id="emailRe"><label for="emailRe" class="l10">메일 수신 허용</label></td>
+                                    </tr>
+                                    <tr >
+                                        <td colspan="2" class="t05"><input type="submit" value="로그인"></td>
+                                    </tr>
+                            </table>
+                        </form>
+                        <div class="t20">
+                            <a href="#">계정에 엑세스할 수 있으세요? <br> 일회용 코드를 사용하여 로그인 </a>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <P>Microsoft 계정이 없으신가요?  <a href="*">지금등록</a></P>
+                </div>
+            </section>
+            <footer>
+                <hr>
+                <ul>
+                    <li class="l15"> <a href="*"> ⓒ2014 Microsoft  </a> </li>
+                    <li class="l15"> <a href="*"> 서비스 계약 </a> </li>
+                    <li class="l15"> <a href="*"> 개인정보 및 쿠기 </a> </li>
+                </ul>
+                <ul>
+                    <li class="l200" > <a href="*"> 도움말센터 </a> </li>
+                    <li class="l15" > <a href="*"> 피드백 </a> </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

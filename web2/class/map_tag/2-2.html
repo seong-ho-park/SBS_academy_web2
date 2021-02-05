@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 맵 태그 예제 -->
+    <div>
+        <img src="imageMap.jpg" alt="맵" usemap="#mapArea1"><!--샵을 꼭 넣어야함-->
+    </div>
+    
+    <map name="mapArea1"><!-- coords : 좌표 (알씨) -->
+        <area shape="rect" coords="40, 80, 110, 150" href="#" alt="이미지에 대한 설명"> <!--왼쪽위 오른쪽 아래 x y좌표-->
+        <area shape="cycle" coords="200, 170, 60" href="#" alt="ㅁㄴㅇㄹ"> <!--중심xy 및 반지름-->
+        <area shape="poly" coords="" href="#" alt=""> <!--삼각형일때 꼭지점 3점 한방향으로 -->
+        <area shape="poly" coords="" href="#" alt="">
+        <area shape="poly" coords="" href="#" alt="">
+    </map> <!--footer에서 일반적으로 사용// 이미지 하나 넣고 각각에 링크를 걸어준다.-->
+</body>
+</html>

@@ -1,0 +1,201 @@
+*{padding:0; margin:0;}
+
+ul, li{ list-style: none; float:left;}
+
+/* text align */
+.align-left { text-align: left; } 
+.align-center { text-align: center; } 
+.align-right { text-align: right; } 
+.align-justify { text-align: justify; }
+
+.vt{vertical-align: top;}
+.vm{vertical-align: middle;}
+.vb{vertical-align: bottom;}
+.vbl{vertical-align: baseline;}
+
+/* padding left detail */
+.l05{padding-left:5px;}
+.l10{padding-left : 10px;}
+.l15{padding-left : 15px;}
+.l20{padding-left: 20px;}
+
+.l200{padding-left: 330px;}
+
+.b52{padding-bottom: 52px;}
+.b39{padding-bottom: 39px;}
+.b75{padding-bottom: 75px;}
+
+.t05{padding-top: 5px;}
+.t10{padding-top: 10px;}
+.t15{padding-top: 15px;}
+.t20{padding-top: 20px;}
+.t208{padding-top:208px;}
+
+.margin_l61{margin-left:61px;}
+.margin_b76{ margin-bottom: 76px;}
+
+/* font-size */
+.font-size20{font-size: 2em;}
+
+.color-white{color:white}
+
+/*링크관련*/
+a:link{text-decoration:none; color:white;}
+a:visited{text-decoration:none; color:white; }
+a:active{text-decoration:none;color:white;}
+a:hover{text-decoration:none;color:white;}
+
+BODY{
+    background-color: #999;
+}
+
+header {
+    top: 39px ;
+    width: 1600px;
+    position:relative;
+    height:50px;
+}
+
+header h1{
+
+    float:left;
+    width:300px;
+    position: relative;
+    left:214px;
+}
+
+nav{
+    float:left;
+    position:relative;
+    top:5px;
+    left:586px;
+    clear:right;
+    
+}
+
+nav li{
+    padding-left:37px;
+}
+
+nav h2{
+    float:left;
+}
+
+nav ul{
+    float:left;
+}
+nav h2{ display: none;}
+
+div#wrapper{width: 1600px; margin:0 auto; position: relative;}
+
+main{
+    position: relative;
+    top:38px;
+    left:214px;
+    right:214px;
+    width:1172px;
+}
+
+section{
+    z-index: 10;
+}
+
+/* section1 */
+#section1{
+    width:675px;
+}
+
+#section1 p {
+    position:relative;
+    left:113px;
+    width:432px;
+}
+
+#section1 div{
+    border: white solid 1px;
+    box-sizing: border-box;
+    width:237px;
+    height:57px;
+    text-align: center;
+    padding-top:14px;
+    font-size: 1.2em;
+}
+
+/* section2 */
+#section2{
+    z-index: 3;
+    position: relative;
+    top:230px;
+    
+}
+
+#section2 p{
+    font-size: 1.3em;
+}
+
+#section2 h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+#section2 div{
+    display: flex;
+    justify-content: center;
+}
+
+#section2 div div{
+    float:left;
+    border: white solid 1px;
+    box-sizing: border-box;
+    width:366px;
+    height:90px;
+}
+
+#section2 div div p{
+    font-size: 2.2em;
+}
+
+#bg_img1{
+    background-image: url(../imgs/appbies-obj-phone1.png);
+    width:290px;
+    height:788px;
+    position :absolute;
+    top:140px;
+    right:297px;
+    z-index:0;
+}
+
+#bg_img1-1{
+    background-image: url(../imgs/appbies-obj-phone2.png);
+    width:290px;
+    height:788px;
+    position :absolute;
+    top:173px;
+    right:194px;
+    z-index:0;
+}
+
+#bg_img2{
+    position:absolute;
+    top:710px;
+    width:1000px;
+    height:581px;
+    transform: skew(3.5deg) rotateZ(183deg);
+    background-color: #0072cf;
+    background-image: url(../imgs/appbies-bg-dot-left.png);
+    left:0px;
+    z-index:1;
+}
+#bg_img2-1{
+    position:absolute;
+    top:741px;
+    width:1000px;
+    height:581px;
+    transform: skew(3.5deg) rotateZ(183deg);
+    background-color: #0072cf;
+    background-image: url(../imgs/appbies-bg-dot-right.png);
+    right:0px;
+    z-index:1;
+}
+

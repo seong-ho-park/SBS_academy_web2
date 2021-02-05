@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>pespective_poster</title>
+        <link href="" rel="stylesheet" type="text/css">
+        <link type="text/css" href="" rel="stylesheet" >
+        <style>
+            .box1{zoom: 0.3;}
+            .wrap{
+                perspective: 500px;
+            }
+            
+            .poster{
+                width:300px;
+                margin: 50px auto;
+                background-color: #53535366;
+                transform: rotateY(50deg);
+                /*transform-style: preserve-3d;*/
+                animation: spin 5s linear infinite;
+                
+            }
+
+            .img img {width:100%; 
+                transform-origin: top; 
+                vertical-align: top;
+                transform: rotateX(0deg);
+                transition: transform .4s ease;
+            }
+
+            @keyframes spin {
+                0%{
+                    transform:rotateY(0deg);
+                }100%{
+                    transform:rotateY(360deg);
+                }
+            }
+            .poster:hover img{transform:rotateX(40deg)}
+        </style>
+    </head>
+
+    <body>
+        <!-- <div class="box1"><img src="./images/poster.png" alt="포스터입니디."></div> -->
+        
+
+    <div class="wrap">    
+        <div class="poster">
+            <div class="img">
+                <img src="./images/poster.png" alt="">뮬란 보기
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

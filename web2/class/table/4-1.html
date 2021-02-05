@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px gray solid;
+           
+        }
+        body{ 
+            font-family: "맑은고딕","돋움","arial";
+            font-style: 12px;
+            line-height: 1.5;
+        }
+        /* 일반적으로 이렇게 만들어 놓고 필요한 곳에 클래스를 집어넣는다. */
+        .al{text-align: left;}
+        .ac{text-align: center;}
+        .ar{text-align: right;}
+        .vt{vertical-align: top;}
+        .vm{vertical-align: middle;}
+        .vb{vertical-align: bottom;}
+
+        /* 패딩관련 */
+        .l05{padding-left:5px;}
+        .l10{padding-left : 10px;}
+        .l15{padding-left : 15px;}
+        .ll20{padding-left: 20px;}
+
+        /*링크관련*/
+        a:link{text-decoration:none;color:gray;}
+        a:visited{text-decoration:none;color:gray;}
+        a:active{text-decoration:none;color:red;}
+        a:hover{text-decoration:none;color:red;}
+
+    </style>
+</head>
+<body>
+    <table>
+        <th>표제목</th>
+        <tr>
+            <td>1</td><td>2</td>
+        </tr>S
+        <tr>
+            <td>3</td><td>4</td>
+        </tr>
+        <tr><td colspan="2">5</td></tr>
+        <tr></tr>
+    </table>
+    <br>
+    <table width="800">
+        <caption>표 캡션이라고</caption>
+        <tr><th>번호</th><th>카테고리</th><th>제목</th><th>첨부</th><th>등록일</th><th>조회수</th></tr>
+        <tr><td>1537</td><td>분양</td><td class="l05"><a href="#">주공 디자인포럼 가입안내</a></td><td><img src="imgs/icon_disk.gif" alt="첨부파일 버튼 사진입니다."></td><td>10-03-20</td><td>12345</td></tr>
+        <tr><td>1536</td><td>임대</td><td><a href="#">제 90주년 임시정부수립 기념일 4월 13일까지</a></td><td><img src="imgs/icon_disk.gif" alt="첨부파일 버튼 사진입니다."></td><td>10-03-17</td><td>12345</td></tr>
+        <tr><td>1535</td><td>상가</td><td><a href="#">안전하고 건전한 정보보호 생활가이드(행정안전부)</a></td><td><img src="imgs/icon_disk.gif" alt="첨부파일 버튼 사진입니다."></td><td>10-03-20</td><td>12345</td></tr>
+        <tr><td>1534</td><td>국민임대</td><td><a href="#">임대주택 열사용 기본요금 전액감면 안내</a></td><td><img src="imgs/icon_disk.gif" alt="첨부파일 버튼 사진입니다."></td><td>10-03-20</td><td>12345</td></tr>
+    </table>
+</body>
+</html>

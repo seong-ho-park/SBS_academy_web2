@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="" rel="stylesheet" type="text/css">
+        <style>
+            section{
+                border:5px black solid;
+                margin :100px;
+                height: 300px;
+                width:300px;
+            }
+            div.a{
+                width:300px;
+                height:300px;
+                background-color: royalblue;
+                transform: rotate(30deg);
+            }
+            div.box1{
+                width:150px;
+                height:150px;
+                background-color: blue;
+                transform: translate(0px, 0px);
+
+                transition-duration: 2s;
+            }
+            div.box1:hover{
+                transform: translate(150px, 300px);
+                
+            }
+            div.box2{
+                width:150px;
+                height:150px;
+                background-color: blueviolet;
+                transition-duration: 1s;
+            }
+            div.box2:active{
+                transform: translateX(150px);
+                
+            }
+            div.box3{
+                width:150px;
+                height:150px;
+                background-color: yellowgreen;
+                transition-duration: 3s;
+            }
+            div.box3:hover{
+                transform: translateY(150px);
+                
+            }
+            div.box4{
+                width:150px;
+                height:150px;
+                background-color: gray;
+                transform:scale(1.5, 1.5);
+                transition-duration: 3s;
+            }            
+            div.box5{
+                width:150px;
+                height:150px;
+                background-color: gray;
+               
+                transition-duration: 1s;
+            }
+            div.box5:hover{
+                width:150px;
+                height:150px;
+                background-color: red;
+                transform:skew(45deg,15deg);
+            }
+            div.box6{
+                width:300px;
+                height:300px;
+                background-color: gray;
+                transform:rotate(10deg);
+                transform-origin: 100% 100%;           
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <div class="a"></div>
+        </section>
+        <div class="box1"> 111</div>
+        <div class="box2">2 22</div>
+        <div class="box3">333 </div>
+        <br>
+        <br>
+        <div class="box4">444 </div>
+        <div class="box5">555 </div>
+
+        <section>
+            <div class="box6">666 </div>
+        </section>
+        <div class="box7">777</div>
+    </body>
+</html>

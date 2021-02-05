@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>perspective</title>
+        <link href="" rel="stylesheet" type="text/css">
+        <style>
+            .box1{
+                width:300px;
+                height:300px;
+                border:3px solid red;
+                margin:50px auto;
+
+                /*원근법 설정 작을수록 원근법이 심하다.*/
+                perspective: 500px;
+            }
+            .inner1{
+                width: 100%;
+                height: 100%;
+                background-color: coral;
+                opacity: .7;
+                transform:translate3d(10px, 10px, 100px);
+            }
+            .box2{
+                width: 720px;
+                height: 240px;
+                border:3px solid red;
+                margin:50px auto;
+                /*perspective : 원근법 작을수록 왜곡이 심함. 왜곡하려는 부모 태그에 넣어야 모두 왜곡됌*/
+                perspective: 200px;
+            }
+            .inner2{
+                width: 200px;
+                height:200px;
+                background-color: coral;
+                opacity: .7;
+                margin:20px;
+                float: left;
+                transform:rotateX(50deg);
+            }
+            .box3{
+                width: 720px;
+                height: 240px;
+                border:3px solid red;
+                margin:50px auto;
+            }
+            .inner3{
+                width: 200px;
+                height:200px;
+                background-color: coral;
+                opacity: .7;
+                margin:20px;
+                float: left;
+                /*perspective가 rotateX 보다 앞에 나와야한다.*/
+                transform:perspective(200px) rotateX(50deg) ;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box1">
+            <div class="inner1">
+                프론트엔드
+            </div>
+        </div>
+        <div class="box2">
+            <div class="inner2">프론트엔드</div>
+            <div class="inner2">프론트엔드</div>
+            <div class="inner2">프론트엔드</div>
+        </div>
+        <div class="box3">
+            <div class="inner3">프론트엔드</div>
+            <div class="inner3">프론트엔드</div>
+            <div class="inner3">프론트엔드</div>
+        </div>
+    </body>
+</html>

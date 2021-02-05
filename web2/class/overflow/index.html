@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>text-overflow 속성</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <style>
+            div{
+                
+                width:300px; height:30px;
+                background-color: yellow;
+            }
+            .a{
+                overflow: hidden;
+                text-overflow:clip;
+            }
+            .b{
+                overflow: scroll;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>text-overflow</h2> 
+        <!-- 메인 베너 슬라이드를 만들 때 사용한다. 보이는 영역을 지정 나머지는 안보이게 함. -->
+        <div class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur itaque delectus quod quibusdam modi ea rerum magnam obcaecati, ipsum doloribus praesentium optio velit sit vero voluptas, at reprehenderit alias aliquid.</div>
+        <br>
+        <div class="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium minima sunt fugit aliquam earum sed dolore aspernatur hic, itaque excepturi minus illo eligendi maxime. Reprehenderit officiis in beatae doloremque debitis.</div>
+
+    </body>
+</html>
