@@ -26,7 +26,17 @@ a:hover{text-decoration:none;color:white;}
 /* outline  */
 #wrapper{ width:1600px; margin:0 auto;}
 
+/*  */
+header{
+    height:930px; /* wrapper가 가로를 이미 지정했음 */
+    background: url(../imgs/appbies-bg-visual.jpg) no-repeat; 
 
+}
 
+/* inner content size */
+.container{ 
+    width : 1172px; 
+    margin : 0 auto;
+}
 
 
